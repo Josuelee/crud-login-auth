@@ -1,0 +1,91 @@
+.error404 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.error404__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  background-color: #efeff3;
+  padding: 4rem;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.error404__container::before,
+.error404__container::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-color: var(--third-color);
+  border-radius: 100%;
+  position: absolute;
+}
+.error404__container::before {
+  right: 100px;
+  bottom: 100px;
+}
+.error404__container::after {
+  top: 100px;
+  left: 100px;
+}
+
+.error404__content {
+  flex: 1;
+}
+.error404__content h1,
+.error404__content p {
+  color: #000;
+  font-size: 100px;
+  margin: 0.5rem;
+}
+
+.error404__content p {
+  color: #000;
+  font-size: 40px;
+  color: var(--main-color);
+}
+
+.error404__action {
+  display: flex;
+  align-items: center;
+}
+.error404__action button {
+  margin-top: 1.5rem;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s ease color, 0.5s ease background-color;
+}
+
+.error404__action button:hover {
+  color: var(--second-color);
+}
+
+.error404__image {
+  flex: 1;
+}
+.error404__image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+  .error404__container {
+    flex-direction: column;
+  }
+  .error404 {
+    margin: 5rem 0;
+  }
+
+  .error404__container::before,
+  .error404__container::after {
+    width: 150px;
+    height: 150px;
+  }
+}

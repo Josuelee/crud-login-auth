@@ -1,0 +1,97 @@
+.login-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 80%;
+  color: var(--second-color);
+  background-color: aliceblue;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.login::before,
+.login::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 150px;
+
+  position: absolute;
+  border-radius: 100%;
+  background-color: var(--third-color);
+}
+
+.login::before {
+  top: -60px;
+  left: -60px;
+}
+
+.login::after {
+  bottom: -60px;
+  right: -60px;
+}
+
+.login__title {
+  margin: 2rem 0;
+}
+.login__img {
+  width: 70%;
+}
+
+.login__form {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  width: 70%;
+}
+
+.login__form-input {
+  width: 100%;
+  background-color: var(--third-color);
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+
+.login__form-input::placeholder {
+  color: #ff69a0;
+}
+
+.login__form-input::marker {
+  color: red;
+}
+
+.login__form-send {
+  padding: 0.8rem;
+  border-radius: 5px;
+  background-color: var(--second-color);
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s ease background-color, 0.5s ease border;
+}
+
+.login__form-send:hover {
+  background-color: #fff;
+  color: var(--second-color);
+  border: thin solid var(--second-color);
+}
