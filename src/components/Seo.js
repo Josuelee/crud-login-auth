@@ -13,10 +13,7 @@ const Seo = () => {
       property="og:description"
       content="Full Stack application to make a Login & CRUD"
     />  
-    <meta
-      property="og:image"
-      content={`https://crud-login-auth.netlify.app${socialImage}`}
-    />  
+      
   </Helmet>
   )
 }
