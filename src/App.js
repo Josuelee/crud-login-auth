@@ -13,14 +13,14 @@ import { Route, Routes } from "react-router-dom";
 import PrivateRoute from "./components/PrivateRoute";
 import "./App.css";
 
-import Seo from "./components/Seo";
+// import Seo from "./components/Seo";
 
 const App = () => {
   const { loading, error, validations, db } = useContext(CrudContext);
 
   return (
     <div className="App">
-      <Seo/>     
+      {/* <Seo/>      */}
       <Routes>
         <Route>
           <Route path="login" element={<Login />} />
