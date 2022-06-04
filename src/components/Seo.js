@@ -15,7 +15,7 @@ const Seo = () => {
     />  
     <meta
       property="og:image"
-      content={socialImage}
+      content={`https://crud-login-auth.netlify.app${socialImage}`}
     />  
   </Helmet>
   )
