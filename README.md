@@ -42,7 +42,7 @@ Note: to delete you will need to have ADMIN_ROLE in the DB
 - Mongoose
 - Validations in the front end and back end
 
-Link: https://grud-login.netlify.app/
+Link: https://crud-login-auth.netlify.app/
 <br/>
 Back end code: https://github.com/Josuelee/Rest-Server
 
